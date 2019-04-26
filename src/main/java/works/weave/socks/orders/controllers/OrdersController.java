@@ -43,7 +43,7 @@ public class OrdersController {
     @Autowired
     private CustomerOrderRepository customerOrderRepository;
 
-    @Value(value = "${http.timeout:5}")
+    @Value(value = "${http.timeout:25}")
     private long timeout;
 
     @ResponseStatus(HttpStatus.CREATED)
